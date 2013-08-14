@@ -1,8 +1,3 @@
-# Target Options
-TARGET = main
-
-OBJS = $(TARGET).o uart.o lcd.o
-
 # Hey Emacs, this is a -*- makefile -*-
 #----------------------------------------------------------------------------
 # Makefile for the avr-gcc Toolchain
@@ -11,7 +6,11 @@ OBJS = $(TARGET).o uart.o lcd.o
 #
 #----------------------------------------------------------------------------
 
-# Target
+# Target Options
+TARGET = main
+OBJS = $(TARGET).o uart.o lcd.o
+
+# Hardware
 MCU = atmega328p
 F_CPU = 14745000
 
